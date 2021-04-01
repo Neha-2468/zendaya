@@ -16,7 +16,7 @@ class HyperlinkManager:
 
         self.text = text
 
-        self.text.tag_config("hyper", foreground="blue", underline=1)
+        self.text.tag_config("hyper", foreground="green", underline=1)
 
         self.text.tag_bind("hyper", "<Enter>", self._enter)
         self.text.tag_bind("hyper", "<Leave>", self._leave)
