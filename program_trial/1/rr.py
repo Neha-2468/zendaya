@@ -16,7 +16,7 @@ class HyperlinkManager:
 
         self.text = text
 
-        self.text.tag_config("hyper", foreground="green", underline=1)
+        self.text.tag_config("hyper", foreground="blue", underline=1)
 
         self.text.tag_bind("hyper", "<Enter>", self._enter)
         self.text.tag_bind("hyper", "<Leave>", self._leave)
@@ -201,7 +201,7 @@ record['link']
 
 
 # Execute the bot and see it in Action
-#execute_bot()
+execute_bot()
 
 
 class QuestionDigonosis(Frame):
@@ -214,7 +214,7 @@ class QuestionDigonosis(Frame):
 #        master.minsize(700,350)
         QuestionDigonosis.objRef=self
         super().__init__(master=master)
-        self["bg"]="light blue"
+        self["bg"]="light green"
         self.createWidget()
         self.iterObj=None
 
